@@ -37,18 +37,12 @@ public class MyfirstprojectApplication implements CommandLineRunner{
 
 		cat1.getProducts().addAll(Arrays.asList(p1, p3));
 		cat2.getProducts().addAll(Arrays.asList(p2, p4));
-		
-		
 		categoryRepository.save(cat1);
 		categoryRepository.save(cat2);
 		productRepository.save(p1);
 		productRepository.save(p2);
 		productRepository.save(p3);
 		productRepository.save(p4);
-		
-		
-		
 	}
-	
 }
 

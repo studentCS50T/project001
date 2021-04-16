@@ -24,11 +24,9 @@ public class ProductResource {
 		List<Product> list = categoryRepository.findAll();
 		return ResponseEntity.ok().body(list);
 	}
-
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Product> findById(@PathVariable Long id) {
 		Product cat = categoryRepository.findById(id);
 		return ResponseEntity.ok().body(cat);
 	}
-	
 }

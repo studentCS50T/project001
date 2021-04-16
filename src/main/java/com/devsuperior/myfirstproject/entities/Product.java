@@ -14,7 +14,6 @@ public class Product implements Serializable{
 	public Product() {
 		
 	}
-
 	public Product(Long id, String name, Double price, Category category) {
 		super();
 		this.id = id;
@@ -62,7 +61,6 @@ public class Product implements Serializable{
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -79,5 +77,4 @@ public class Product implements Serializable{
 			return false;
 		return true;
 	}
-
 }
